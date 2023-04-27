@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@300;400;500;600;700&display=swap'); 
+
+.cart-product-container {
+  display: flex;
+  width: 37em;
+  height: 8em;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 4px 12px #00000014;
+  transition-duration: .3s;
+  font-family: 'Work Sans'
+}
+.cart-product-container:hover {
+  box-shadow: 2px 4px 20px #0000001a;
+  scale: 1.06;
+}
+.cart-product-container img {
+  min-height: 100%;
+  width: 10em;
+  object-fit: cover;
+}
+.product-details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 2em 1em;
+}
+.product-info {
+  display: flex;
+ }
+.product-info .title {
+  margin-bottom: .5em;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.product-info .text {
+  font-size: 1.1em;
+}
+.product-info .text >:last-child {
+  font-weight: 300;
+  color: #696969;
+  font-size: .85em;
+  max-width: 11em;
+}
+.right-side-wrapper, .product-info{
+  display: flex;
+  align-items: center;
+}
+.right-side-wrapper {
+  width: 8em;
+  justify-content: space-between;
+}
+.price-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4em;
+}
+.price-options span {
+  margin-bottom: .7em;
+  font-weight: 600;
+}
+.price-options .quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition-duration: .3s;
+}
+.price-options .quantity button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity button svg {
+  width: 1em;
+  height: 1em;
+}
+.quantity button:hover svg{
+  fill: #3582ff;
+}
+.cancel-btn {
+  background: none;
+  border: none;
+  border-radius: 50em;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  transform: rotate(45deg);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transform-origin: center;
+}
+.cancel-btn:hover {
+  transform: rotate(135deg);
+}
+@media only screen and (max-width: 780px) {
+  .cart-product-container {
+    font-size: 0.9em;
+  }
+  .cart-product-container:hover {
+    box-shadow: 2px 4px 12px #00000014;
+    transform: scale(1);
+  }
+} 
+@media only screen and (max-width: 500px) {
+  .quantity button svg {
+    width: .7em;
+    height: .7em;
+  }
+  .price-options .quantity {
+    gap: 7px;
+  }
+  .cancel-btn {
+    width: 1em;
+    height: 1em;
+  }
+  .product-info .text {
+    font-size: 1.2em;
+  }
+} 

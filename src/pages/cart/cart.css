@@ -1,0 +1,37 @@
+.cart{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-container {
+  display: flex;
+  gap: 2.5em ;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 4rem;
+} 
+.item{
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  padding: 2px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  cursor: pointer;
+}
+h1, h3{
+  margin: 8px 0;
+}
+.vb{
+  display: flex;
+}
+.v{
+  margin-left: 4px;
+}

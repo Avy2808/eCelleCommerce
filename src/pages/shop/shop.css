@@ -1,0 +1,39 @@
+.product-container {
+  display: flex;
+  gap: 2.5em ;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 4rem;
+} 
+.product{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  padding: 2px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  gap: 1rem;
+}
+.sb{
+  padding: 3px;
+  font-size: 15px;
+}
+.s{
+  cursor: pointer;
+}
+h1, h3{
+  margin: 8px 0;
+}
