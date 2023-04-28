@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className="comp">
                             <NavLink className="nav-link" to="/">Home </NavLink>
                         <NavLink to="/login" className="btn btn-outline-dark m-2"><i className="nav-item"></i> Login</NavLink>
-                        <NavLink to="/register" className="btn btn-outline-dark m-2"><i className="nav-item"></i> Register</NavLink>
+                        <NavLink to="/register" className="btn btn-outline-dark m-2"><i className="nav-item"></i> Sign Up</NavLink>
                         <NavLink to="/cart" className="btn btn-outline-dark m-2"><i className="nav-item"></i> Cart ({state.length}) </NavLink>
                 </div>
 
